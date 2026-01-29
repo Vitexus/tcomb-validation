@@ -1,0 +1,17 @@
+Source: node-tcomb-validation
+Section: javascript
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends: debhelper (>= 13), dh-nodejs, nodejs
+Standards-Version: 4.6.0
+Homepage: https://github.com/gcanti/tcomb-validation
+Vcs-Browser: https://github.com/gcanti/tcomb-validation
+Vcs-Git: https://github.com/gcanti/tcomb-validation.git
+Rules-Requires-Root: no
+
+Package: node-tcomb-validation
+Architecture: all
+Depends: ${misc:Depends}, ${nodejs:Depends}
+Description: Validation library for JavaScript
+ tcomb-validation is a library for Node.js and the browser which allows you to validate
+ your code using tcomb.
