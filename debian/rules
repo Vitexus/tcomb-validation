@@ -2,3 +2,9 @@
 
 %:
 	dh $@ --with nodejs
+
+override_dh_auto_build:
+	# Skip webpack build - not needed for runtime
+
+override_dh_auto_test:
+	# Skip automatic test - requires tcomb dependency
